@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roqed</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+        <script type="text/javascript">
+        (function(){
+        emailjs.init("TRDgqmr_F0mj_hTS-");
+        })();
+    </script>
+</head>
+<body>
+    
+    <div class="bg">
+        <div class="pointer" id="pointer"></div>
+        <div class="box-main">
+            <div class="roqed-logo">
+                <img class="roqed-img" src="img/roqed-logo.svg" alt="roqed-logo">
+            </div>
+            <div class="text">
+                <p class="fiif">
+                    Franchising Initial Inquiry Form
+                </p>
+                <p class="shortdesc">
+                    Thank you for expressing your interest in becoming a part of us. 
+                    <br>Please complete the form below, 
+                    and we'll connect with you to discuss the next steps.
+                </p>
+            </div>
+
+            <div class="inputarea">
+                <input id="name" type="text" class="fn" placeholder="First Name*">
+                <input id="lname" type="text" class="fn" placeholder="Last Name*">
+                <input id="email" type="text" class="fn" placeholder="Email*">
+                <input id="pn" type="text" class="fn" placeholder="Phone Number">
+                <input id="cn" type="text" class="fn" placeholder="Country*">
+                <textarea id="message" name="anycom" class="ac" cols="30" rows="10" placeholder="Any comments"></textarea>
+            </div>
+            <button onclick="sendMail()" class="submit">
+                Submit
+            </button>
+        </div>
+
+    </div>
+    <script src="main.js">
+        
+    </script>
+</body>
+</html>
